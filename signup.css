@@ -41,13 +41,14 @@ body {
     margin: auto;
     box-shadow: 0 4px 8px rgba(134, 134, 134, 0.1);
     border-radius: 10px;
-    padding: 20px;
+    padding: 50px;
     width: 400px;
     color: white;
 }
 
 .sign-in h2 {
-    margin-bottom: 20px;
+
+    margin-top: 15px;
     text-align: center;
     color: #ffffff;
 }
@@ -65,11 +66,13 @@ body {
 }
 
 .things input{
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    font-size: 14px;
+    
+        width: 250px; /* Adjust the length as desired */
+        padding: 5px; /* Keep the padding for spacing */
+        border: 1px solid #000000;
+        border-radius: 8px;
+        font-size: 14px;
+
 }
 
 .signin-button {
@@ -81,7 +84,7 @@ body {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .signin-button:hover {
@@ -101,11 +104,13 @@ body {
 }
 .login-link a:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
 
 .checkbox-container label{
     font-size: 14px;
     margin-left: 5px;
+    
 }
 
 
