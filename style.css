@@ -9,11 +9,7 @@ a{
     text-decoration: none;
 }
 
-/*body{
-    font-family: 'ubuntu', sans-serif ;
-    background-color: rgba(0, 0, 0, 0.907);
-    margin: auto;
-}*/
+
 body {
     font-family: 'ubuntu', sans-serif ;
     display: flex;
