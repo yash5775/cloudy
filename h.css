@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav {
+    padding: 0.7rem;
+}
+
+.cloudy-logo {
+    font-size: 1.3rem;
+    font-weight: 400; 
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 0%;
+}
+
+body {
+    font-family: 'ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.907);
+    min-height: 100vh; /* Ensures the body spans the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+header, center {
+    flex: 0; /* Header and center won't grow */
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto; /* Center dashboard horizontally */
+    align-items: start; /* Align all boxes to the top */
+    flex-grow: 1; /* Dashboard takes up the remaining vertical space */
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.2s; /* Added smooth zoom transition */
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-box {
+    grid-column: span 2; /* Profile box spans two columns */
+}
+
+.logout-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.logout-icon:hover {
+    color: #ff4747; /* Red on hover */
+}
+
+footer {
+    font-family: 'ubuntu', sans-serif;
+    background-color: rgba(89, 88, 88, 0.422);
+    color: rgba(255, 255, 255, 0.668);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-div {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.sep {
+    background-color: rgba(255, 255, 255, 0.668);
+    height: 10px;
+    width: 1px;
+    margin: 0 10px;
+}

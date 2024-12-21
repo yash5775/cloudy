@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloudy</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="h.css">
+    <link rel="logo" href="cloudy/apple.png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html" class="cloudy-logo"><i class='bx bxl-soundcloud' ></i></i>cloudy</a>
+            <a href="index.html" class="logout-icon"><i class='bx bx-log-out'></i></a>
+
+        </nav>
+    </header>
+    <div class="dashboard">
+        <!-- Profile Box -->
+        <div class="box profile-box">
+            <h2>User Profile</h2>
+            <p>Name: Yash</p>
+            <p>Email: yash.chaniyara@icloud.com</p>
+        </div>
+        
+        <!-- Other Boxes -->
+        <div class="box" onclick="openPage('photos.html')">
+            <h2>Photos</h2>
+            <p>View your photos</p>
+        </div>
+        <div class="box" onclick="openPage('mail.html')">
+            <h2>Mail</h2>
+            <p>Check your mail</p>
+        </div>
+        <div class="box" onclick="openPage('drive.html')">
+            <h2>Drive</h2>
+            <p>Access your files</p>
+        </div>
+    </div>
+
+    
+    
+    
+    <script>
+        function openPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+
+    
+
+
+
+
+    <footer>
+        <div class="footer-div">
+            <a href="about.html">About Us</a>
+            <div class="sep"></div>
+            <a href="policy.html">Private Policy </a>
+        </div>
+
+    </footer>
+</body>
+</html>
