@@ -21,7 +21,20 @@ body {
 
 header nav{
     padding: .7rem;
+
 }
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is above other content */
+
+}
+
+
+
 
 .cloudy-logo{
     font-size: 1.3rem;
@@ -37,6 +50,18 @@ header nav{
     align-items: center; 
     justify-content: center;
 }
+/* 
+#cloud{
+
+    width: 100%;
+} */
+ 
+ #cloud img {
+    width: 550px;
+    height: auto; 
+    
+}
+
 
 .heading h1{
     color: white;
@@ -66,6 +91,7 @@ header nav{
     text-align: center;
     margin: 5px 0;
     font-weight: 500;
+    margin-bottom: 35px;
 }
 
 footer{

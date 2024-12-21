@@ -1,36 +1,33 @@
-*{
+/* General Reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     color: inherit;
     text-decoration: none;
 }
-header nav{
-    padding: .7rem;
+
+/* Header Styling */
+header nav {
+    padding: 0.7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.cloudy-logo{
+.cloudy-logo {
     font-size: 1.3rem;
-    font-weight: 400; 
+    font-weight: 400;
     display: flex;
     align-items: center;
     color: white;
-    margin-top: 0%;
-
 }
-body {
-    font-family: 'ubuntu', sans-serif ;
-    display: flex;
-    background: rgba(0, 0, 0, 0.907);
-    flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
-}
-
-
-
 
 .logout-icon {
     position: absolute;
@@ -42,7 +39,17 @@ body {
 }
 
 .logout-icon:hover {
-    color: #ff4747; /* Red on hover */
+    color: #ff4747;
+}
+
+/* Body and Dashboard Styling */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.907);
+    min-height: 100vh;
+    padding-top: 50px; /* Adjust for header height */
 }
 
 .dashboard {
@@ -51,10 +58,9 @@ body {
     gap: 20px;
     padding: 20px;
     width: 90%;
-    margin: 20px auto; /* Adjusted margin for spacing */
-    align-items: start; /* Align all boxes to the top */
+    margin: 0 auto;
+    align-items: start;
 }
-
 
 .box {
     background-color: rgba(0, 0, 0, 0.8);
@@ -63,12 +69,12 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, background-color 0.2s; /* Added smooth zoom transition */
+    transition: transform 0.3s, background-color 0.2s;
     cursor: pointer;
 }
 
 .box:hover {
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -76,34 +82,34 @@ body {
     grid-column: span 2; /* Profile box spans two columns */
 }
 
-
-
-
-
-
-
-
-
-
-header, center {
-    flex: 1; /* Allows header and center content to grow and fill space */
+.storage-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#storageChart {
+    width: 100%;
+    height: 150px;
+}
+
+/* Footer Styling */
 footer {
-    font-family: 'ubuntu', sans-serif ;
+    font-family: 'Ubuntu', sans-serif;
     background-color: rgba(89, 88, 88, 0.422);
     color: rgba(255, 255, 255, 0.668);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
 }
-.footer-div{
-    display: flex;
-    font-size: .8rem;
-    align-items: center;
 
+.footer-div {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
 }
 
 .sep {
@@ -111,5 +117,4 @@ footer {
     height: 10px;
     width: 1px;
     margin: 0 10px;
-
 }

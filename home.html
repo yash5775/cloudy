@@ -1,66 +1,113 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cloudy</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="h.css">
-    <link rel="logo" href="cloudy/apple.png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="cloudy/apple.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
     <header>
         <nav>
-            <a href="home.html" class="cloudy-logo"><i class='bx bxl-soundcloud' ></i></i>cloudy</a>
+            <a href="home.html" class="cloudy-logo"><i class='bx bxl-soundcloud'></i>cloudy</a>
             <a href="index.html" class="logout-icon"><i class='bx bx-log-out'></i></a>
-
         </nav>
     </header>
+
     <div class="dashboard">
-        <!-- Profile Box -->
+        <!-- Box 1: Profile -->
         <div class="box profile-box">
             <h2>User Profile</h2>
             <p>Name: Yash</p>
             <p>Email: yash.chaniyara@icloud.com</p>
         </div>
-        
-        <!-- Other Boxes -->
+
+        <!-- Box 2: Photos -->
         <div class="box" onclick="openPage('photos.html')">
             <h2>Photos</h2>
             <p>View your photos</p>
         </div>
+
+        <!-- Box 3: Storage with Donut Chart -->
+        <div class="box storage-box">
+            <h2>Storage</h2>
+            <canvas id="storageChart"></canvas>
+        </div>
+
+        <!-- Box 4: Mail -->
         <div class="box" onclick="openPage('mail.html')">
             <h2>Mail</h2>
             <p>Check your mail</p>
         </div>
+
+        <!-- Box 5: Drive -->
         <div class="box" onclick="openPage('drive.html')">
             <h2>Drive</h2>
             <p>Access your files</p>
         </div>
+
+        <!-- Box 6: Contacts -->
+        <div class="box" onclick="openPage('contacts.html')">
+            <h2>Contacts</h2>
+            <p>Manage your contacts</p>
+        </div>
+
+        <!-- Box 7: Audio -->
+        <div class="box" onclick="openPage('audio.html')">
+            <h2>Audio</h2>
+            <p>Listen to your audio files</p>
+        </div>
+
+        <!-- Box 8: Videos -->
+        <div class="box" onclick="openPage('videos.html')">
+            <h2>Videos</h2>
+            <p>Watch your videos</p>
+        </div>
+
+        <!-- Box 9: Trash Bin -->
+        <div class="box" onclick="openPage('trash.html')">
+            <h2>Trash Bin</h2>
+            <p>View deleted files</p>
+        </div>
     </div>
-
-    
-    
-    
-    <script>
-        function openPage(pageUrl) {
-            window.location.href = pageUrl;
-        }
-    </script>
-
-    
-
-
-
 
     <footer>
         <div class="footer-div">
             <a href="about.html">About Us</a>
             <div class="sep"></div>
-            <a href="policy.html">Private Policy </a>
+            <a href="policy.html">Private Policy</a>
         </div>
-
     </footer>
+
+    <script>
+        function openPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+
+        // Donut Chart for Storage Box
+        const ctx = document.getElementById('storageChart').getContext('2d');
+        const storageChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Used', 'Free'],
+                datasets: [{
+                    data: [60, 40], // Example data: 60% used, 40% free
+                    backgroundColor: ['#FF6384', '#36A2EB'],
+                    hoverBackgroundColor: ['#FF6384', '#36A2EB']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
