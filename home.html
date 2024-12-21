@@ -17,25 +17,27 @@
         </nav>
     </header>
 
-    <div class="dashboard">
-        <!-- Box 1: Profile -->
-        <div class="box profile-box">
+    <div class="two" >
+        <div class="box profile-box" id="boxx" >
             <h2>User Profile</h2>
             <p>Name: Yash</p>
             <p>Email: yash.chaniyara@icloud.com</p>
         </div>
+       
+        <div class="box storage-box" id="box" >
+            <h2>Storage</h2>
+            <canvas id="storageChart"></canvas>
+        </div>
+        
+    </div>
 
-        <!-- Box 2: Photos -->
+    <div class="dashboard">
+
         <div class="box" onclick="openPage('photos.html')">
             <h2>Photos</h2>
             <p>View your photos</p>
         </div>
 
-        <!-- Box 3: Storage with Donut Chart -->
-        <div class="box storage-box">
-            <h2>Storage</h2>
-            <canvas id="storageChart"></canvas>
-        </div>
 
         <!-- Box 4: Mail -->
         <div class="box" onclick="openPage('mail.html')">
@@ -45,7 +47,7 @@
 
         <!-- Box 5: Drive -->
         <div class="box" onclick="openPage('drive.html')">
-            <h2>Drive</h2>
+            <h2>Document</h2>
             <p>Access your files</p>
         </div>
 

@@ -49,18 +49,36 @@ body {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.907);
     min-height: 100vh;
-    padding-top: 50px; /* Adjust for header height */
+    padding-top: 60px; /* Adjust for header height */
+}
+
+
+
+.two {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 30px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 30px;
     padding: 20px;
     width: 90%;
     margin: 0 auto;
-    align-items: start;
+
 }
+#boxx {
+    height: 220px ;
+    width: 400px;
+}
+
+
 
 .box {
     background-color: rgba(0, 0, 0, 0.8);
@@ -74,25 +92,38 @@ body {
 }
 
 .box:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .profile-box {
-    grid-column: span 2; /* Profile box spans two columns */
+    grid-column: span 1; /* Adjust to fit into one grid column */
 }
 
 .storage-box {
+    grid-column: span 1; /* Adjust to fit into one grid column */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    height: 220px;
+    padding-bottom: 20px ;
+    
+    
 }
 
 #storageChart {
     width: 100%;
-    height: 150px;
+    height: 20%;
 }
+
+.rest-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Repeat 3 boxes per row */
+    gap: 20px;
+}
+
+
 
 /* Footer Styling */
 footer {
