@@ -52,10 +52,7 @@ body {
     padding-top: 60px; /* Adjust for header height */
 }
 
-
-
 .two {
-
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three equal columns */
     gap: 30px;
@@ -77,8 +74,6 @@ body {
     height: 220px ;
     width: 400px;
 }
-
-
 
 .box {
     background-color: rgba(0, 0, 0, 0.8);
@@ -107,9 +102,7 @@ body {
     align-items: left;
     justify-content: center;
     height: 220px;
-    padding-bottom: 20px ;
-    
-    
+    padding-bottom: 20px ; 
 }
 
 #storageChart {
@@ -122,6 +115,7 @@ body {
     grid-template-columns: repeat(3, 1fr); /* Repeat 3 boxes per row */
     gap: 20px;
 }
+
 
 
 
