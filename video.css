@@ -80,8 +80,46 @@ body{
     display: none;
 }
 
+.video-container {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    color: white;
+}
 
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.video-item {
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-item button:hover {
+    background-color: #ff1f1f;
+}
 
 footer {
     font-family: 'Ubuntu', sans-serif;

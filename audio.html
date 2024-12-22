@@ -17,10 +17,15 @@
         </nav>
     </header>
     <button class="add-btn"><i class='bx bx-plus'></i></button>
-    <input type="file" class="file-input"accept=".mp3,.wav,.aac,.ogg,.flac,.alac,.wma,.aiff,.opus" >
+    <input type="file" class="file-input" accept=".mp3,.wav,.aac,.ogg,.flac,.alac,.wma,.aiff,.opus,.m4a">
+    <div class="audio-container">
+        <h2>Your Audios</h2>
+        <div class="audio-list" id="audioList">
+            <!-- Audios will be dynamically added here -->
+        </div>
+    </div>
     <script src="function.js"></script>
-
-    
+    <script src="audio.js"></script>
     <footer>
         <div class="footer-div">
             <a href="about.html">About Us</a>

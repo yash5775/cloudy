@@ -80,10 +80,46 @@ body{
     padding-top: 60px; /* Adjust for header height */
 }
 
+.audio-container {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    color: white;
+}
 
+.audio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.audio-item {
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: calc(33.333% - 20px);
+    text-align: center;
+}
 
+.audio-item audio {
+    width: 100%;
+    border-radius: 10px;
+}
 
+.audio-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-item button:hover {
+    background-color: #ff1f1f;
+}
 
 footer {
     font-family: 'Ubuntu', sans-serif;
