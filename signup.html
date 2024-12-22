@@ -51,25 +51,13 @@
                     <label for="checkbox">Show Password</label>
                 </div>
                 
-                <script type="text/javascript">
-                    // Get both password fields and the checkbox
-                    let password = document.getElementById('password');
-                    let confirmPassword = document.getElementById('confirm-password');
-                    let checkbox = document.getElementById('checkbox');
-                
-                    // Toggle visibility for both fields
-                    checkbox.onclick = function () {
-                        let type = checkbox.checked ? 'text' : 'password';
-                        password.type = type;
-                        confirmPassword.type = type;
-                    };
-                </script>
-
+            
 
                 <button type="button" id="signinButton" class="signin-button">Sign up</button>
                 <p class="login-link">Have an account already? <a href="login.html">Sign in</a></p>
 
             </form>
+            <script src="signup.js"></script>
             
         </div>
     </center>
