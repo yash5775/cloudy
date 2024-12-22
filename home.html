@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cloudy</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="h.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="icon" href="cloudy/apple.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -18,13 +18,13 @@
     </header>
 
     <div class="two" >
-        <div class="box profile-box" id="boxx" >
+        <div class="boxx profile-box" id="boxx" >
             <h2>User Profile</h2>
             <p>Name: Yash</p>
             <p>Email: yash.chaniyara@icloud.com</p>
         </div>
        
-        <div class="box storage-box" id="box" >
+        <div class="boxx storage-box" id="box" >
             <h2>Storage</h2>
             <canvas id="storageChart"></canvas>
         </div>
@@ -84,6 +84,10 @@
         </div>
     </footer>
 
+    
+
+
+
     <script>
         function openPage(pageUrl) {
             window.location.href = pageUrl;
@@ -97,19 +101,26 @@
                 labels: ['Used', 'Free'],
                 datasets: [{
                     data: [60, 40], // Example data: 60% used, 40% free
-                    backgroundColor: ['#FF6384', '#36A2EB'],
-                    hoverBackgroundColor: ['#FF6384', '#36A2EB']
+                    backgroundColor: ['#36A2EB', '#6B7280'], // Muted red and neutral gray
+                    hoverBackgroundColor: ['rgb(23, 143, 224)', '#4B5563'], // Slightly darker shades for hover
+                    borderColor: '#1F2937', // Border color matching dark theme
+                    borderWidth: 2
                 }]
             },
             options: {
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'bottom'
+                        position: 'bottom',
+                        labels: {
+                            color: '#E5E7EB', // Light gray for text
+                        }
                     }
                 }
             }
         });
     </script>
+
+
 </body>
 </html>
