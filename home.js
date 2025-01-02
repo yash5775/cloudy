@@ -2,6 +2,8 @@ function openPage(pageUrl) {
     window.location.href = pageUrl;
 }
 
+
+
 // Donut Chart for Storage Box
 const ctx = document.getElementById('storageChart').getContext('2d');
 const storageChart = new Chart(ctx, {
