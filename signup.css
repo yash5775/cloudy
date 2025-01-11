@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -30,6 +29,10 @@ header nav {
     color: white;
     margin-top: 0%;
 
+}
+
+.cloudy-logo:hover {
+    color: #7bc7fa;
 }
 
 body {

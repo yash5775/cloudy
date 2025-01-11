@@ -27,6 +27,10 @@ header nav {
 
 }
 
+.cloudy-logo:hover {
+    color: #7bc7fa;
+}
+
 
 .login-container {
     font-family: 'ubuntu', sans-serif ;
